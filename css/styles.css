@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: var(--primary-font), sans-serif;
+  font-family: var(--primary-font), var(--secondary-font), sans-serif;
   color: var(--primary-text-color);
 }
 
@@ -82,8 +82,10 @@ address {
   line-height: 1.36;
   /* or 136% */
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.06em;
 }
+/*button*/
 .btn-active {
   cursor: pointer;
   font-weight: 700;
@@ -104,10 +106,16 @@ address {
 .feature-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+/*.shadow {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}*/
+
 .feature-text {
   font-size: 14px;
   line-height: 1.7;
@@ -133,6 +141,7 @@ address {
   letter-spacing: 0.03em;
 }
 .team-position {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   /* identical to box height */
@@ -141,11 +150,12 @@ address {
   letter-spacing: 0.03em;
 }
 /*======main section style ends===*/
-/*======footer style ends===*/
+/*======footer style starts===*/
 .footer {
   background-color: #2f303a;
   color: #ffffff;
 }
+/*button*/
 .footer:focus,
 .footer:hover,
 .footer:visited {
@@ -158,9 +168,10 @@ address {
 
   letter-spacing: 0.03em;
 }
+/*adresses for footer*/
 .contact-footer {
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   /* or 171% */
 
   letter-spacing: 0.03em;
@@ -172,3 +183,40 @@ address {
 .contact-footer:visited {
   color: rgba(255, 255, 255, 0.6);
 }
+/*======footer style ends===*/
+/*=====Portfolio starts====*/
+/*buttons*/
+.button-work {
+  cursor: pointer;
+  border-color: white;
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.button-work:focus,
+.button-work:hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+/*our results*/
+.work-project {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+}
+.work-product {
+  font-size: 16px;
+  line-height: 1.8;
+  /* identical to box height, or 187% */
+  color: var(--secondary-text-color);
+  letter-spacing: 0.03em;
+}
+/*=====Portfolio ends====*/
